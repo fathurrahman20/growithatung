@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Landing Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <!--    Bootstrap Icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <!--    My CSS -->
+    <style>
+      body {
+        padding-top: 56px;
+      }
+      .jumbotron {
+        background-image: url("images/header.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        text-shadow: black 1px 1px;
+      }
+
+      .btn-primer {
+        background-color: #1746a2;
+        color: #fff;
+      }
+
+      .btn-primer:hover {
+        background-color: #0a3b98;
+        color: #fff;
+      }
+
+      .button-header {
+        margin-top: 3rem;
+      }
+
+      /*h2:before,*/
+      /*h2:after {*/
+      /*  background-color: gray;*/
+      /*  content: "";*/
+      /*  height: 1px;*/
+      /*  display: inline-block;*/
+      /*  vertical-align: middle;*/
+      /*  position: relative;*/
+      /*  width: 20%;*/
+      /*}*/
+
+      /*h2:before {*/
+      /*  right: 0.5em;*/
+      /*  margin-left: -50%;*/
+      /*}*/
+
+      /*h2:after {*/
+      /*  left: 0.5em;*/
+      /*  margin-right: -50%;*/
+      /*}*/
+
+      [id] {
+        scroll-margin-top: 100px;
+      }
+
+      #service .text-maroon {
+        color: #2b7a0b;
+      }
+
+      #service .text-white {
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="images/my-logo.png" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#product">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Header -->
+    <header class="jumbotron p-5 bg-primary text-white">
+      <div class="container-fluid text-center">
+        <p class="display-3">Lorem ipsum dolor.</p>
+        <p class="lead">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+          aspernatur dolorum nesciunt nostrum! Expedita fuga maiores minus
+          molestias quam repellendus.
+        </p>
+        <p class="button-header">
+          <a
+            href="#"
+            class="btn btn-primer btn-lg"
+            style="
+              margin-right: 0.3rem;
+              text-shadow: none;
+              margin-bottom: 0.5rem;
+            "
+            >Berlanggan</a
+          >
+          <a
+            href="#"
+            class="btn btn-secondary btn-lg"
+            style="
+              margin-left: 0.3rem;
+              text-shadow: none;
+              margin-bottom: 0.5rem;
+            "
+            >Pelajari Selengkapnya</a
+          >
+        </p>
+      </div>
+    </header>
+    <!-- Akhir Header -->
+
+    <!-- Service -->
+    <section
+      id="service"
+      class="service-style container-fluid container-fluid bg-light"
+    >
+      <div class="row text-center py-3">
+        <div class="col-12">
+          <h2 class="display-4 text-center pb-3">
+            <i class="bi bi-dash-lg"></i>Mengapa Memilih Kami?<i
+              class="bi bi-dash-lg"
+            ></i>
+          </h2>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <span class="fa-stack fa-2x">
+            <i class="fa-solid fa-circle fa-stack-2x text-maroon"></i>
+            <i class="fa-solid fa-list fa-stack-1x text-white"></i>
+          </span>
+          <h3 class="text-maroon pt-3">Materi Lengkap dan Terstruktur</h3>
+          <p>
+            mengikuti alur belajar terarah dari A-Z,dari Zero to Hero yang
+            disusun oleh para expert
+          </p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <span class="fa-stack fa-2x">
+            <i class="fa-solid fa-circle fa-stack-2x text-maroon"></i>
+            <i class="fa-solid fa-laptop-code fa-stack-1x text-white"></i>
+          </span>
+          <h3 class="text-maroon pt-3">Akses Selamanya</h3>
+          <p>
+            60+ jam durasi belajar yang terdiri dari 20+ Modul. Materi terus
+            bertambah dan diupdate sesuai tren teknologi.
+          </p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <span class="fa-stack fa-2x">
+            <i class="fa-solid fa-circle fa-stack-2x text-maroon"></i>
+            <i class="fa-solid fa-chart-line fa-stack-1x text-white"></i>
+          </span>
+          <h3 class="text-maroon pt-3">Latihan</h3>
+          <p>
+            Ada tugas evaluasi yang akan direview langsung oleh para mentor.
+          </p>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <span class="fa-stack fa-2x">
+            <i class="fa-solid fa-circle fa-stack-2x text-maroon"></i>
+            <i class="fa-solid fa-money-bills fa-stack-1x text-white"></i>
+          </span>
+          <h3 class="text-maroon pt-3">Harga Terjangkau</h3>
+          <p>
+            Kamu akan mendapatkan program pembelajaran dengan harga yang lebih
+            murah.
+          </p>
+        </div>
+        <div class="col-12 pt-5">
+          <p>
+            <a href="#" class="btn btn-success btn-lg" target="_blank"
+              >Lihat Selengkapnya</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Service -->
+
+    <!-- Produk -->
+    <section id="product" class="container">
+      <div class="row text-center py-3">
+        <div class="col-12">
+          <h2 class="display-4">
+            <i class="bi bi-dash-lg"></i>Produk Kami<i
+              class="bi bi-dash-lg"
+            ></i>
+          </h2>
+        </div>
+        <div class="col-md-4">
+          <div class="card mt-4">
+            <img
+              src="images/algortima.png"
+              alt="algoritma dasar"
+              style="max-height: 400px"
+            />
+            <div class="card-body" style="min-height: 250px">
+              <div class="card-title">
+                <h5>Algortima dan Pemrograman Dasar</h5>
+              </div>
+              <div class="card-text">
+                <p>
+                  Konsep dasar algoritma pemrograman adalah materi yang wajib
+                  dipahami oleh setiap orang yang ingin mempelajari pemrograman
+                  komputer
+                </p>
+              </div>
+            </div>
+            <div class="card-footer py-3">
+              <a
+                href="detail.html"
+                class="btn btn-success btn-md py-2"
+                target="_blank"
+                >Harga dan Detail</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mt-4">
+            <img src="images/html5.png" alt="html5" style="max-height: 400px" />
+            <div class="card-body" style="min-height: 250px">
+              <div class="card-title">
+                <h5>Belajar Dasar HTML</h5>
+              </div>
+              <div class="card-text">
+                <p>
+                  Kelas HTML5 dasar ini akan membawa kalian untuk berkenalan
+                  terlebih dahulu tentang bagaimana cara membangun suatu Website
+                  dengan mudah. Karena nanti pastinya kita juga akan mempelajari
+                  ilmu lebih dalam seperti menggunakan Framework CSS layaknya
+                  Bootstrap atau Bulma CSS.
+                </p>
+              </div>
+            </div>
+            <div class="card-footer py-3">
+              <a href="#" class="btn btn-success btn-md py-2"
+                >Harga dan Detail</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mt-4">
+            <img
+              src="images/css.png"
+              alt="css dasar"
+              style="max-height: 400px"
+            />
+            <div class="card-body" style="min-height: 250px">
+              <div class="card-title">
+                <h5>Belajar Dasar CSS</h5>
+              </div>
+              <div class="card-text">
+                <p>
+                  Dengan menggunakan Cascade Style Sheet kini kita dapat
+                  mempercantik website kita agar lebih eye-catching. Tujuan
+                  utamanya adalah agar pengguna kita lebih nyaman lagi ketika
+                  menggunakan website kita. Warna dan jenis tipografi akan
+                  menentukan masing-masing dari tujuan website tersebut dibuat.
+                </p>
+              </div>
+            </div>
+            <div class="card-footer py-3">
+              <a href="#" class="btn btn-success btn-md py-2"
+                >Harga dan Detail</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Produk -->
+
+    <!-- About -->
+    <section id="about">
+      <div class="container-fluid bg-light">
+        <div class="row text-center py-3 g-0">
+          <h2 class="display-4 pb-3">
+            <i class="bi bi-dash-lg"></i>About Me<i class="bi bi-dash-lg"></i>
+          </h2>
+          <div
+            class="col-12 col-md-6 d-flex align-items-center"
+            style="padding: 15px"
+          >
+            <div>
+              <h3>Lorem Ipsum Dolor</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aperiam, aut, blanditiis consequuntur deleniti dolorum eos
+                eveniet exercitationem fugiat id incidunt ipsam libero modi
+                nesciunt nihil omnis possimus quam quos reprehenderit sapiente
+                veritatis? Eveniet repudiandae sint unde. Consectetur delectus
+                distinctio dolores labore magnam maxime placeat quis quo
+                temporibus. Minima, saepe soluta.
+              </p>
+              <div class="pt-3">
+                <p>
+                  <a href="#" target="_blank" class="btn btn-secondary"
+                    >Lihat selengkapnya</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="images/img-1.jpg" alt="" class="img-fluid" />
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="images/img-2.jpg" alt="" class="img-fluid" />
+          </div>
+          <div
+            class="col-12 col-md-6 d-flex align-items-center"
+            style="padding: 15px"
+          >
+            <div>
+              <h3>Lorem Ipsum Dolor</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aperiam, aut, blanditiis consequuntur deleniti dolorum eos
+                eveniet exercitationem fugiat id incidunt ipsam libero modi
+                nesciunt nihil omnis possimus quam quos reprehenderit sapiente
+                veritatis? Eveniet repudiandae sint unde. Consectetur delectus
+                distinctio dolores labore magnam maxime placeat quis quo
+                temporibus. Minima, saepe soluta.
+              </p>
+              <div class="pt-3">
+                <p>
+                  <a href="#" target="_blank" class="btn btn-secondary"
+                    >Lihat selengkapnya</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir About -->
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container py-3">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="display-5">
+              <i class="bi bi-dash-lg"></i>Hubungi Kami<i
+                class="bi bi-dash-lg"
+              ></i>
+            </h2>
+            <p class="lead">
+              Langkah yang tepat untuk berinvestasi kepada ilmu pengetahuan yang
+              baru di bidang IT
+            </p>
+            <div class="pt-3">
+              <p>
+                <a
+                  href="https://wa.me/6287787108086?text=Saya%20tertarik%20dengan%20kelas%20Anda%20yang%20dijual%20di%20GroWithAtung"
+                  class="btn btn-success rounded-pill btn-lg"
+                  target="_blank"
+                  >Contact CS</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Contact -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid bg-dark text-light">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="pt-3">
+              <a href="https://www.facebook.com" target="_blank"
+                ><i class="fa-brands fa-facebook text-white"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/lbnufathoni/"
+                target="_blank"
+                class="px-2"
+                ><i class="fa-brands fa-instagram text-white"></i
+              ></a>
+              <a href="https://www.twitter.com" target="_blank"
+                ><i class="fa-brands fa-twitter text-white"></i
+              ></a>
+            </div>
+            <p>Copyright &copy GroWithAtung 2022</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Akhir Footer-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/61bf4a384c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
